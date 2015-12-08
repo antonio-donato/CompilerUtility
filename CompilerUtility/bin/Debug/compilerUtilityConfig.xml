@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<compilerUtility>
+  <!-- Percorso della cartella che contiene i due file .BAT -->
+  <scriptFolder>d:\workspace_starteam\Wingesfar\</scriptFolder>
+
+  <!-- Percorso base dove trovare le diverse WFAR* -->
+  <baseDestinationPath>c:\</baseDestinationPath>
+
+  <!-- Percorso base dove ci sono i diversi rami di Starteam -->
+  <starteamBasePath>D:\workspace_starteam\Wingesfar\</starteamBasePath>
+</compilerUtility>

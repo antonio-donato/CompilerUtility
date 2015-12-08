@@ -1,0 +1,9 @@
+\\moscato\utenti\Donant\Compiler Utility\CompilerUtility\CompilerUtility\bin\Debug\compilerUtilityConfig.xml
+\\moscato\utenti\Donant\Compiler Utility\CompilerUtility\CompilerUtility\bin\Debug\CompilerUtility.exe
+\\moscato\utenti\Donant\Compiler Utility\CompilerUtility\CompilerUtility\bin\Debug\CompilerUtility.pdb
+\\moscato\utenti\Donant\Compiler Utility\CompilerUtility\CompilerUtility\obj\x86\Debug\CompilerUtility.csprojResolveAssemblyReference.cache
+\\moscato\utenti\Donant\Compiler Utility\CompilerUtility\CompilerUtility\obj\x86\Debug\Studiofarma.CompilerUtility.MainForm.resources
+\\moscato\utenti\Donant\Compiler Utility\CompilerUtility\CompilerUtility\obj\x86\Debug\CompilerUtility.Properties.Resources.resources
+\\moscato\utenti\Donant\Compiler Utility\CompilerUtility\CompilerUtility\obj\x86\Debug\CompilerUtility.csproj.GenerateResource.Cache
+\\moscato\utenti\Donant\Compiler Utility\CompilerUtility\CompilerUtility\obj\x86\Debug\CompilerUtility.exe
+\\moscato\utenti\Donant\Compiler Utility\CompilerUtility\CompilerUtility\obj\x86\Debug\CompilerUtility.pdb
