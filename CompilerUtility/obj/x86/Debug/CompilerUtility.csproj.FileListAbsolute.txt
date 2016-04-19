@@ -16,3 +16,5 @@ D:\Github_repository\CompilerUtility\CompilerUtility\obj\x86\Debug\CompilerUtili
 D:\Github_repository\CompilerUtility\CompilerUtility\obj\x86\Debug\Studiofarma.CompilerUtility.MainForm.resources
 D:\Github_repository\CompilerUtility\CompilerUtility\obj\x86\Debug\CompilerUtility.Properties.Resources.resources
 D:\Github_repository\CompilerUtility\CompilerUtility\obj\x86\Debug\CompilerUtility.csproj.GenerateResource.Cache
+D:\workspace_git\CompilerUtility\CompilerUtility\obj\x86\Debug\CompilerUtility.exe
+D:\workspace_git\CompilerUtility\CompilerUtility\obj\x86\Debug\CompilerUtility.pdb

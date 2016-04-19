@@ -4,7 +4,7 @@
   <scriptFolder>d:\workspace_starteam\Wingesfar\</scriptFolder>
 
   <!-- Percorso base dove trovare le diverse WFAR* -->
-  <baseDestinationPath>c:\</baseDestinationPath>
+  <baseDestinationPath>D:\</baseDestinationPath>
 
   <!-- Percorso base dove ci sono i diversi rami di Starteam -->
   <starteamBasePath>D:\workspace_starteam\Wingesfar\</starteamBasePath>
