@@ -26,7 +26,7 @@ namespace Studiofarma.CompilerUtility
         {
             _view = view;
             _debug = debug;
-            _destination = destination.Substring(4); // Tolgo dalla destinazione 'wfar'
+            _destination = destination; //destination.Substring(4); // Tolgo dalla destinazione 'wfar'
 
             // Estraggo la configurazione
             _config = CompilerUtilityConfig.Config;
