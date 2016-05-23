@@ -7,3 +7,12 @@
 \\moscato\utenti\Donant\Compiler Utility\CompilerUtility\CompilerUtility\obj\x86\Debug\CompilerUtility.csproj.GenerateResource.Cache
 \\moscato\utenti\Donant\Compiler Utility\CompilerUtility\CompilerUtility\obj\x86\Debug\CompilerUtility.exe
 \\moscato\utenti\Donant\Compiler Utility\CompilerUtility\CompilerUtility\obj\x86\Debug\CompilerUtility.pdb
+D:\workspace_git\CompilerUtility\CompilerUtility\obj\x86\Debug\CompilerUtility.exe
+D:\workspace_git\CompilerUtility\CompilerUtility\obj\x86\Debug\CompilerUtility.pdb
+D:\workspace_git\CompilerUtility\CompilerUtility\bin\Debug\compilerUtilityConfig.xml
+D:\workspace_git\CompilerUtility\CompilerUtility\bin\Debug\CompilerUtility.exe
+D:\workspace_git\CompilerUtility\CompilerUtility\bin\Debug\CompilerUtility.pdb
+D:\workspace_git\CompilerUtility\CompilerUtility\obj\x86\Debug\CompilerUtility.csprojResolveAssemblyReference.cache
+D:\workspace_git\CompilerUtility\CompilerUtility\obj\x86\Debug\Studiofarma.CompilerUtility.MainForm.resources
+D:\workspace_git\CompilerUtility\CompilerUtility\obj\x86\Debug\CompilerUtility.Properties.Resources.resources
+D:\workspace_git\CompilerUtility\CompilerUtility\obj\x86\Debug\CompilerUtility.csproj.GenerateResource.Cache

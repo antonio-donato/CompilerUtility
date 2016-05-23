@@ -1,0 +1,8 @@
+D:\workspace_git\CompilerUtility\CompilerUtility\bin\Release\compilerUtilityConfig.xml
+D:\workspace_git\CompilerUtility\CompilerUtility\bin\Release\CompilerUtility.exe
+D:\workspace_git\CompilerUtility\CompilerUtility\bin\Release\CompilerUtility.pdb
+D:\workspace_git\CompilerUtility\CompilerUtility\obj\x86\Release\Studiofarma.CompilerUtility.MainForm.resources
+D:\workspace_git\CompilerUtility\CompilerUtility\obj\x86\Release\CompilerUtility.Properties.Resources.resources
+D:\workspace_git\CompilerUtility\CompilerUtility\obj\x86\Release\CompilerUtility.csproj.GenerateResource.Cache
+D:\workspace_git\CompilerUtility\CompilerUtility\obj\x86\Release\CompilerUtility.exe
+D:\workspace_git\CompilerUtility\CompilerUtility\obj\x86\Release\CompilerUtility.pdb

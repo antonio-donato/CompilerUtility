@@ -56,10 +56,26 @@ namespace Studiofarma.CompilerUtility
             cmbViews.SelectedIndex = 0;
 
             // Riempio la COMBO con tutte le WAFR presenti
-            String[] destinations = Directory.GetDirectories(_config.BaseDestinationPath, CompilerUtilityConfig.DESTINATION_PATTERN);
-            foreach (String str in destinations)
-                cmbDestination.Items.Add(Path.GetFileName(str));
+            DriveInfo[] unita = DriveInfo.GetDrives();
+            foreach (DriveInfo driveFound in unita)
+            {
+                if (driveFound.IsReady == true)
+                {
+                    String[] destinations = Directory.GetDirectories(driveFound.Name, CompilerUtilityConfig.DESTINATION_PATTERN);
+                    foreach (String str in destinations)
+                    {
+                        cmbDestination.Items.Add(driveFound.Name + Path.GetFileName(str));
+                    }
+
+                }
+            }
             cmbDestination.SelectedIndex = 0;
+
+
+            //String[] destinations = Directory.GetDirectories(_config.BaseDestinationPath, CompilerUtilityConfig.DESTINATION_PATTERN);
+            //foreach (String str in destinations)
+            //    cmbDestination.Items.Add(Path.GetFileName(str));
+            //cmbDestination.SelectedIndex = 0;
 
             // Attivo i controlli di default e seleziono il testo della combo delle View
             this.ActiveControl = cmbViews;
