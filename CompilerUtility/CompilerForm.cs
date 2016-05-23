@@ -59,7 +59,7 @@ namespace Studiofarma.CompilerUtility
             DriveInfo[] unita = DriveInfo.GetDrives();
             foreach (DriveInfo driveFound in unita)
             {
-                if (driveFound.IsReady == true)
+                if (driveFound.IsReady == true && driveFound.DriveType == DriveType.Fixed)
                 {
                     String[] destinations = Directory.GetDirectories(driveFound.Name, CompilerUtilityConfig.DESTINATION_PATTERN);
                     foreach (String str in destinations)
