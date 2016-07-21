@@ -43,6 +43,8 @@
             this.compileAllLabel = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.cmbDestination = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cmbCompilerVersion = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.compileAllGroup.SuspendLayout();
             this.SuspendLayout();
@@ -50,7 +52,7 @@
             // btnCompile
             // 
             this.btnCompile.Enabled = false;
-            this.btnCompile.Location = new System.Drawing.Point(12, 69);
+            this.btnCompile.Location = new System.Drawing.Point(12, 80);
             this.btnCompile.Name = "btnCompile";
             this.btnCompile.Size = new System.Drawing.Size(75, 23);
             this.btnCompile.TabIndex = 3;
@@ -89,7 +91,7 @@
             this.chkDebug.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.chkDebug.AutoSize = true;
             this.chkDebug.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkDebug.Location = new System.Drawing.Point(190, 73);
+            this.chkDebug.Location = new System.Drawing.Point(190, 84);
             this.chkDebug.Name = "chkDebug";
             this.chkDebug.Size = new System.Drawing.Size(58, 17);
             this.chkDebug.TabIndex = 3;
@@ -120,7 +122,7 @@
             // logo
             // 
             this.logo.Image = global::CompilerUtility.Properties.Resources.logo;
-            this.logo.Location = new System.Drawing.Point(12, 98);
+            this.logo.Location = new System.Drawing.Point(12, 117);
             this.logo.Name = "logo";
             this.logo.Size = new System.Drawing.Size(129, 50);
             this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -129,7 +131,7 @@
             // 
             // btnCompileAll
             // 
-            this.btnCompileAll.Location = new System.Drawing.Point(93, 69);
+            this.btnCompileAll.Location = new System.Drawing.Point(93, 80);
             this.btnCompileAll.Name = "btnCompileAll";
             this.btnCompileAll.Size = new System.Drawing.Size(75, 23);
             this.btnCompileAll.TabIndex = 8;
@@ -155,7 +157,7 @@
             this.compileAllGroup.Controls.Add(this.stopCompileAll);
             this.compileAllGroup.Controls.Add(this.compileAllLabel);
             this.compileAllGroup.Controls.Add(this.compileAllProgressBar);
-            this.compileAllGroup.Location = new System.Drawing.Point(12, 152);
+            this.compileAllGroup.Location = new System.Drawing.Point(12, 173);
             this.compileAllGroup.Name = "compileAllGroup";
             this.compileAllGroup.Size = new System.Drawing.Size(452, 57);
             this.compileAllGroup.TabIndex = 10;
@@ -188,7 +190,7 @@
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(254, 71);
+            this.label3.Location = new System.Drawing.Point(147, 119);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(92, 21);
             this.label3.TabIndex = 12;
@@ -200,17 +202,47 @@
             this.cmbDestination.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cmbDestination.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbDestination.FormattingEnabled = true;
-            this.cmbDestination.Location = new System.Drawing.Point(254, 99);
+            this.cmbDestination.Location = new System.Drawing.Point(147, 143);
             this.cmbDestination.Name = "cmbDestination";
-            this.cmbDestination.Size = new System.Drawing.Size(210, 24);
+            this.cmbDestination.Size = new System.Drawing.Size(317, 24);
             this.cmbDestination.Sorted = true;
             this.cmbDestination.TabIndex = 13;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Calibri", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(254, 56);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(163, 21);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "Versione Compilatore";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // cmbCompilerVersion
+            // 
+            this.cmbCompilerVersion.AutoCompleteCustomSource.AddRange(new string[] {
+            "80",
+            "90"});
+            this.cmbCompilerVersion.FormattingEnabled = true;
+            this.cmbCompilerVersion.Items.AddRange(new object[] {
+            "80",
+            "90"});
+            this.cmbCompilerVersion.Location = new System.Drawing.Point(254, 81);
+            this.cmbCompilerVersion.Name = "cmbCompilerVersion";
+            this.cmbCompilerVersion.Size = new System.Drawing.Size(86, 21);
+            this.cmbCompilerVersion.TabIndex = 15;
+            this.cmbCompilerVersion.Text = "90";
+            this.cmbCompilerVersion.Enter += new System.EventHandler(this.cmbCompilerVersion_Enter);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(470, 213);
+            this.ClientSize = new System.Drawing.Size(470, 234);
+            this.Controls.Add(this.cmbCompilerVersion);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.cmbDestination);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.compileAllGroup);
@@ -253,6 +285,8 @@
         private System.Windows.Forms.Button stopCompileAll;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cmbDestination;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox cmbCompilerVersion;
     }
 }
 

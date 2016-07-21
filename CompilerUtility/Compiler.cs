@@ -20,13 +20,15 @@ namespace Studiofarma.CompilerUtility
         private String _destination;
         private Boolean _debug;
         private CompilerUtilityConfig _config;
-        #endregion        
+        private string _compilerVersion;
+        #endregion
 
-        public Compiler(String view, String destination, Boolean debug)
+        public Compiler(String view, String destination, Boolean debug, String compilerVersion)
         {
             _view = view;
             _debug = debug;
             _destination = destination; //destination.Substring(4); // Tolgo dalla destinazione 'wfar'
+            _compilerVersion = compilerVersion;
 
             // Estraggo la configurazione
             _config = CompilerUtilityConfig.Config;
@@ -51,7 +53,7 @@ namespace Studiofarma.CompilerUtility
             checkErrorDirectory();
             
             // Creo gli argomenti per lanciare il BAT
-            String args = String.Format("{0} {1} \"\" \"\" \"{2}\" {3}", file, _view, _destination, _debug ? "-Ga" : "");
+            String args = String.Format("{0} {1} \"\" \"\" \"{2}\" {3} {4}", file, _view, _destination, _compilerVersion, _debug ? "-Ga" : "");
 
             // Creo il processo da avviare
             Process process = new Process

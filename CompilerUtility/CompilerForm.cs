@@ -208,6 +208,12 @@ namespace Studiofarma.CompilerUtility
                 return false;
             }
 
+            if (cmbCompilerVersion.SelectedIndex == -1)
+            {
+                MessageBox.Show("No correct compiler version is selected", "Compiler Utility", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
             return true;
         }
 
@@ -219,8 +225,8 @@ namespace Studiofarma.CompilerUtility
             Boolean debug = chkDebug.Checked;
             String view = cmbViews.Items[cmbViews.SelectedIndex].ToString();
             String destination = cmbDestination.Items[cmbDestination.SelectedIndex].ToString();
-            
-            return new Compiler(view, destination, debug);
+            String compilerVersion = "-Z" + cmbCompilerVersion.Items[cmbCompilerVersion.SelectedIndex].ToString();
+            return new Compiler(view, destination, debug, compilerVersion);
         }
 
         /// <summary>
@@ -250,12 +256,12 @@ namespace Studiofarma.CompilerUtility
             if (show)
             {
                 compileAllGroup.Visible = true;
-                this.Height = 251;
+                this.Height = 273;
             }
             else
             {
                 compileAllGroup.Visible = false;
-                this.Height = 190;
+                this.Height = 217;
             }
         }
 
@@ -272,5 +278,15 @@ namespace Studiofarma.CompilerUtility
             };
         }
         #endregion
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbCompilerVersion_Enter(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
